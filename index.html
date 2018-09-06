@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-    <header class="bg-success" data-aos="fade-down" data-aos-anchor-placement="center-center">
+    <header class="bg-success">
         <div class="container">
             <nav class="navbar navbar-light bg-transparent">
                 <a class="navbar-brand mx-auto" href="#">
@@ -25,43 +26,114 @@
         </div>
     </header>
 
-  
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Prencha o formulário</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header d-flex flex-column border-0" style="background-image: url('images/man.jpg');  background-position: center left;">
+                    <div class="container">
+                        <div class="row">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-112">
+                                <h3 class="modal-title font-weight-bold mt-2 text-primary" style="line-height: 1.2;">Contato
+                                    sem compromisso!</h3>
+                                <p class="mt-3 text-white">Fale com um de nossos especialistas e garanta a primeira
+                                    <span class="font-weight-bold text-primary">MENSALIDADE
+                                        GRÁTIS!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body mb-3">
+                    <form id="pageForm" onsubmit="return validations('pageForm');">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" name="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" name="email" placeholder="Seu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Nome da empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="cargo">Cargo</label>
+                            <input type="text" class="form-control" name="cargo" placeholder="Cargo">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Quero um contato</button>
+                    </form>
+
+                </div>
             </div>
-            <div class="modal-body">
-              ...
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
 
     <main>
         <section class="principal bg-dark d-flex flex-column justify-content-center align-items-center" style="background-image: url('images/slider-1.jpg'); background-attachment: fixed; background-position: bottom left; background-size: cover;">
             <div class="container" data-aos="fade-up">
                 <div class="row text-center text-lg-left">
-                    <div class="col-lg-6 col-md-12 col-12">
+                    <div class="col-lg-5 d-lg-flex flex-column justify-content-center col-md-12 col-12">
                         <p class="text-light">Garanta agora</p>
                         <h1 class="text-primary">1 mês grátis de TEF Cappta</h1>
                         <p class="text-light mb-4 mt-4">Descubra o que o TEF Cappta pode fazer pelo seu negócio.
                             Mais integração é mais eficiência!</p>
                         <p class="text-light mb-4 mt-4">VEJA MAIS DETALHES DA NOSSA SOLUÇÃO ABAIXO:</p>
-                        <div class="btn btn-outline-primary d-lg-none m-3" data-toggle="modal" data-target="#exampleModal"><i class="far fa-heart mr-2"></i>Sim,
+                        <div class="btn btn-outline-primary d-lg-none m-3" data-toggle="modal" data-target="#exampleModal"><i
+                                class="far fa-heart mr-2"></i>Sim,
                             quero 1 mês grátis!</div>
                     </div>
-                    <div class="col-lg-6 col-md-none">
-                        <div class="my-form">
-                                <div role="main" id="teste-36fa16789fa71fee77b3"></div>
+
+                    <div class="offset-lg-1 col-lg-6 d-lg-flex d-none flex-column justify-content-center col-md-12 col-12">
+                        <div class="card border-0">
+                            <div class="card-body bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                            <h3 class="text-primary">Contato sem compromisso!</h3>
+                                            <p class="text-white">Fale com um de nossos especialistas e garanta a primeira
+                                                MENSALIDADE GRÁTIS</p>
+                                    </div>
+                                </div>
+                                <form id="pageForm" onsubmit="return validations('pageForm');">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="nome">Nome</label>
+                                                <input type="text" class="form-control" name="nome" placeholder="Seu nome">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="text" class="form-control" name="email" placeholder="Seu email">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+                                                        <label for="empresa">Empresa</label>
+                                                        <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Nome da empresa">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="cargo">Cargo</label>
+                                                        <input type="text" class="form-control" name="cargo" placeholder="Cargo">
+                                                    </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 text-center"><button type="submit" class="btn btn-primary mt-3">Quero um contato</button></div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -73,7 +145,7 @@
                     <div class="col-md-12 d-md-flex justify-content-md-center text-center">
                         <a href="https://wa.me/5511960607806?text=Olá,%20tudo%20bem?" target="_blank" class="btn-wpp btn btn-success d-lg-flex mr-5"><i
                                 class="fab fa-whatsapp mr-2"></i>Tire dúvidas agora!</a>
-                       
+
                     </div>
                 </div>
             </div>
@@ -94,104 +166,111 @@
                         <div class="ml-3">
                             <h5 class="text-success">Economize tempo</h5>
                             <p>Automatize suas vendas em cartão evitando erros e retrabalhos!</p>
-                        </div>                            
+                        </div>
                     </div>
                     <div class="col-lg-6 d-inline-flex mb-2 mt-2">
-                            <div>
-                                <i class="fas fa-2x fa-sort-amount-up  text-primary"></i>
-                            </div>
-                            <div class="ml-3">
-                                <h5 class="text-success">Melhore suas taxas!</h5>
-                                <p>Acionamos nossos parceiros para tentar reduzir suas taxas administrativas.</p>
-                            </div>                            
+                        <div>
+                            <i class="fas fa-2x fa-sort-amount-up  text-primary"></i>
                         </div>
+                        <div class="ml-3">
+                            <h5 class="text-success">Melhore suas taxas!</h5>
+                            <p>Acionamos nossos parceiros para tentar reduzir suas taxas administrativas.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                        <div class="col-lg-6 d-inline-flex mb-2 mt-2">
-                            <div>
-                                <i class="fas fa-2x fa-code  text-primary"></i>
-                            </div>
-                            <div class="ml-3">
-                                <h5 class="text-success">Facil de usar e personalizável!</h5>
-                                <p>Superintuitivo, para que qualquer usuário se adapte rapidamente.</p>
-                            </div>                            
+                    <div class="col-lg-6 d-inline-flex mb-2 mt-2">
+                        <div>
+                            <i class="fas fa-2x fa-code  text-primary"></i>
                         </div>
-                        <div class="col-lg-6 d-inline-flex mb-2 mt-2">
-                                <div>
-                                    <i class="fas fa-2x fa-laptop text-primary"></i>
-                                </div>
-                                <div class="ml-3">
-                                    <h5 class="text-success">Controle de onde estiver!</h5>
-                                    <p> Movimento de várias lojas e caixas à um clique, selecione o período que quiser, dados atualizados em tempo real.</p>
-                                </div>                            
-                            </div>
+                        <div class="ml-3">
+                            <h5 class="text-success">Facil de usar e personalizável!</h5>
+                            <p>Superintuitivo, para que qualquer usuário se adapte rapidamente.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-inline-flex mb-2 mt-2">
+                        <div>
+                            <i class="fas fa-2x fa-laptop text-primary"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h5 class="text-success">Controle de onde estiver!</h5>
+                            <p> Movimento de várias lojas e caixas à um clique, selecione o período que quiser, dados
+                                atualizados em tempo real.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                        <div class="col-lg-6 d-inline-flex mb-2 mt-2">
-                            <div>
-                                <i class="fas fa-2x fa-chart-pie text-primary"></i>
-                            </div>
-                            <div class="ml-3">
-                                <h5 class="text-success">Projete seus recebíveis!</h5>
-                                <p>Projeta o valor líquido a receber e gera planilhas em Excel para facilitar a conciliação bancária.</p>
-                            </div>                            
+                    <div class="col-lg-6 d-inline-flex mb-2 mt-2">
+                        <div>
+                            <i class="fas fa-2x fa-chart-pie text-primary"></i>
                         </div>
-                        <div class="col-lg-6 d-inline-flex mb-2 mt-2">
-                                <div>
-                                    <i class="fas fa-2x fa-couch  text-primary"></i>
-                                </div>
-                                <div class="ml-3">
-                                    <h5 class="text-success">Ganhe comodidade!</h5>
-                                    <p>Serviço de ativação e credenciamento. Habilite mais de 200 bandeiras e adquirentes.</p>
-                                </div>                            
-                            </div>
+                        <div class="ml-3">
+                            <h5 class="text-success">Projete seus recebíveis!</h5>
+                            <p>Projeta o valor líquido a receber e gera planilhas em Excel para facilitar a conciliação
+                                bancária.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-inline-flex mb-2 mt-2">
+                        <div>
+                            <i class="fas fa-2x fa-couch  text-primary"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h5 class="text-success">Ganhe comodidade!</h5>
+                            <p>Serviço de ativação e credenciamento. Habilite mais de 200 bandeiras e adquirentes.</p>
+                        </div>
+                    </div>
                 </div>
         </section>
 
         <!-- CAROUSEL -->
         <section class="bg-dark" style="background-image: url('images/bg-depo.jpg'); background-attachment: fixed; background-position: bottom; background-size: cover;">
-                <div class="container mb-5">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <h2 class="text-primary">Opinião de quem usa</h2>
-                            </div>
-                        </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="text-primary">Opinião de quem usa:</h2>
+                    </div>
                 </div>
+            </div>
             <div class="container">
                 <div class="owl-carousel">
                     <div class="row">
-                        <div class="offset-lg-0 col-lg-5 offset-md-1 col-md-4">
+                        <div class="offset-lg-0 col-lg-5 offset-md-1 col-md-5 col-8 mx-auto">
                             <img src="images/depo-2.png" class="img-fluid mb-5">
                         </div>
-                        <div class="offset-lg-0 col-lg-7 col-md-6">
+                        <div class="offset-lg-0 col-lg-7 col-md-6 text-center text-lg-left text-md-left">
                             <h3 class="text-primary">Talita Moreira</h3>
-                            <p class="text-light">"A CAPPTA  foi a melhor solução de TEF para Donna Gi, sistema moderno e super eficiente, relatórios precisos e ágeis, trabalhar assim é bem melhor..."</p>
+                            <p class="text-light">"A CAPPTA foi a melhor solução de TEF para Donna Gi, sistema moderno
+                                e super eficiente, relatórios precisos e ágeis, trabalhar assim é bem melhor..."</p>
                         </div>
                     </div>
                     <div class="row">
-                            <div class="offset-lg-0 col-lg-5 offset-md-1 col-md-4">
-                                <img src="images/depo-1.png" class="img-fluid mb-5">
-                            </div>
-                            <div class="offset-lg-0 col-lg-7 col-md-6">
-                                <h3 class="text-primary">Hugo</h3>
-                                <p class="text-light">"Antes eu tinha dificuldades com as vendas. Agora, com a CAPPTA não. O sistema é simples e fácil de manusear!"</p>
-                            </div>
+                        <div class="offset-lg-0 col-lg-5 offset-md-1 col-md-5 col-8 mx-auto">
+                            <img src="images/depo-1.png" class="img-fluid mb-5">
+                        </div>
+                        <div class="offset-lg-0 col-lg-7 col-md-6 text-center text-lg-left text-md-left">
+                            <h3 class="text-primary">Hugo</h3>
+                            <p class="text-light">"Antes eu tinha dificuldades com as vendas. Agora, com a CAPPTA não.
+                                O sistema é simples e fácil de manusear!"</p>
+                        </div>
                     </div>
                     <div class="row">
-                            <div class="offset-lg-0 col-lg-5 offset-md-1 col-md-4">
-                                <img src="images/depo-3.png" class="img-fluid mb-5">
-                            </div>
-                            <div class="offset-lg-0 col-lg-7 col-md-6">
-                                <h3 class="text-primary">Marco Antônio</h3>
-                                <p class="text-light">"Fizemos uma pesquisa de mercado e escolhemos o TEF da CAPPTA, um sistema que tem agregado inúmeras vantagens para nossas vendas, com agilidade, dinamismo e taxas menores..."</p>
-                            </div>
+                        <div class="offset-lg-0 col-lg-5 offset-md-1 col-md-5 col-8 mx-auto">
+                            <img src="images/depo-3.png" class="img-fluid mb-5">
                         </div>
+                        <div class="offset-lg-0 col-lg-7 col-md-6 text-center text-lg-left text-md-left">
+                            <h3 class="text-primary">Marco Antônio</h3>
+                            <p class="text-light">"Fizemos uma pesquisa de mercado e escolhemos o TEF da CAPPTA, um
+                                sistema que tem agregado inúmeras vantagens para nossas vendas, com agilidade,
+                                dinamismo e taxas menores..."</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container mt-5">
-                    <div class="row">
-                        <a href="https://www.youtube.com/watch?v=a90QPUhkK3U&index=1&list=PLsU3rjQ3twSlgNvtYdcbKWpx3Yu5n2aN-" target="_blank" class="btn btn-primary mx-auto">Assista os depoimentos</a>
-                    </div>
+                <div class="row">
+                    <a href="https://www.youtube.com/watch?v=a90QPUhkK3U&index=1&list=PLsU3rjQ3twSlgNvtYdcbKWpx3Yu5n2aN-"
+                        target="_blank" class="btn btn-primary mx-auto">Assista os depoimentos</a>
+                </div>
             </div>
         </section>
     </main>
@@ -216,7 +295,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
@@ -224,51 +303,84 @@
     <script src="node_modules/owl/dist/owl.carousel.min.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $(".owl-carousel").owlCarousel();
-          });
+        });
 
         $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script type="text/javascript">
+        window.__lc = window.__lc || {};
+        window.__lc.license = 6487741;
+        (function () {
+            var lc = document.createElement('script');
+            lc.type = 'text/javascript';
+            lc.async = true;
+            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
+                'cdn.livechatinc.com/tracking.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(lc, s);
+        })();
+    </script>
+
+    <script type="text/javascript">
+        function getFormData($form) {
+            var unindexed_array = $form.serializeArray();
+            var indexed_array = {};
+
+            $.map(unindexed_array, function (n, i) {
+                indexed_array[n['name']] = n['value'];
+            });
+
+            return indexed_array;
         }
-    }
-})
+
+        function validations(formId) {
+            var formData = getFormData($('#' + formId))
+            var inputs = $('#' + formId + ' .form-control')
+
+            var isValid = true
+
+            if (formData.nome &&
+                (formData.nome.length < 15 ||
+                    formData.nome.length > 20)
+            ) {
+                $(inputs[0]).addClass('is-invalid')
+                isValid = false
+            }
+
+
+
+            return isValid;
+        }
     </script>
 
-    <script>AOS.init();</script>
-
-    <!-- rd station -->
-
-    <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
-    <script type="text/javascript">
-      new RDStationForms('teste-36fa16789fa71fee77b3-html', 'UA-103979693-1').createForm();
-    </script>
-
-    <!-- Start of LiveChat (www.livechatinc.com) code -->
-    <script type="text/javascript">
-    window.__lc = window.__lc || {};
-    window.__lc.license = 6487741;
-    (function() {
-      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-    })();
-    </script>
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/a5a239d0-72d0-41a0-b896-df723d50ddc0-loader.js"></script>
 
 </body>
 
